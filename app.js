@@ -11,7 +11,7 @@ var scores, roundScore, activePlayer, gamePlaying;
 init();
 
 //Event handler
-document.querySelector(".btn-roll").addEventListener("click", function() {
+document.querySelector(".btn-roll").addEventListener("click", function () {
   if (gamePlaying) {
     // 1. Random number
 
@@ -25,7 +25,8 @@ document.querySelector(".btn-roll").addEventListener("click", function() {
     diceDOM.style.display = "block";
     //diceDOM1.style.display = "block";
 
-    diceDOM.src = "C:/Users/aman/Desktop/javascript/dice-" + dice + ".png";
+    diceDOM.src =
+      "C:/Users/aman/Desktop/javascript/pigGame/dice-" + dice + ".png";
     //diceDOM1.src = "C:/Users/aman/Desktop/javascript/dice-"+dice1+".png";
 
     // 3.update the round score
@@ -45,7 +46,7 @@ document.querySelector(".btn-roll").addEventListener("click", function() {
   }
 });
 
-document.querySelector(".btn-hold").addEventListener("click", function() {
+document.querySelector(".btn-hold").addEventListener("click", function () {
   if (gamePlaying) {
     // add roundscore to global score
     scores[activePlayer] += roundScore;
